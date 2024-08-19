@@ -1,0 +1,233 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  outline: none;
+}
+
+@font-face {
+  font-family: "Russo One";
+  src: url("../fonts/Russo-One.eot");
+  src: url("../fonts/Russo-One.eot?#iefix") format("embedded-opentype"), url("../fonts/Russo-One.woff") format("woff"), url("../fonts/Russo-One.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Advent Pro";
+  src: url("../fonts/AdventPro-Light.eot");
+  src: url("../fonts/AdventPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AdventPro-Light.woff") format("woff"), url("../fonts/AdventPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Advent Pro";
+  src: url("../fonts/AdventPro-Medium.eot");
+  src: url("../fonts/AdventPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AdventPro-Medium.woff") format("woff"), url("../fonts/AdventPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  font-family: "Russo One", sans-serif;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  font-family: "Russo One", sans-serif;
+}
+
+.background {
+  position: relative;
+}
+.background__main {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 130px;
+}
+.header__title {
+  color: white;
+}
+.header__title-heading {
+  font-size: 30px;
+}
+.header__title-heading__highlight {
+  color: yellow;
+}
+.header__button {
+  display: inline-block;
+  background: url("../images/button.png") no-repeat center center;
+  background-size: contain;
+  width: 400px;
+  height: 85px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding-top: 15px;
+}
+.header__button:hover {
+  opacity: 0.9;
+}
+
+.main {
+  position: relative;
+  padding: 0 130px;
+}
+.main__image {
+  position: absolute;
+  z-index: 1;
+  padding-left: 30vw;
+}
+.main__image-rocker {
+  width: auto;
+  height: 90vh;
+}
+.main__gift {
+  position: absolute;
+  z-index: 1;
+  padding-left: 60vw;
+}
+.main__gift-img {
+  width: auto;
+  height: 20vh;
+}
+.main__title {
+  color: #FFFFFF;
+  font-size: 3rem;
+  padding-top: 10vh;
+}
+.main__title-highlight {
+  display: block;
+  font-size: 3rem;
+  background: linear-gradient(45deg, #90DDF0, #E3964D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.main__container {
+  display: flex;
+}
+.main__promo {
+  padding-top: 10vh;
+}
+.main__promo-text__one {
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+.main__promo-text__two {
+  font-size: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #60C1E3;
+}
+.main__price-img {
+  width: auto;
+  height: 30vh;
+}
+.main__pros {
+  position: absolute;
+  z-index: 1;
+  padding-left: 55vw;
+}
+.main__pros-container {
+  display: flex;
+  padding-bottom: 4vh;
+}
+.main__pros-thunder {
+  width: 5vw;
+  height: 5vh;
+}
+.main__pros-text {
+  width: 20vw;
+  color: #61C3E5;
+  font-size: 1rem;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 500;
+}
+.main__pros-text__unhighlight {
+  color: #FFFFFF;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 300;
+}
+.main__order-text {
+  padding-top: 5vh;
+  padding-left: 4vw;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.main__order-text__highlight {
+  color: #61C3E5;
+}
+.main__order-button {
+  display: inline-block;
+  background: url("../images/button.png") no-repeat center center;
+  background-size: contain;
+  width: 400px;
+  height: 110px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding-top: 25px;
+  font-size: 17px;
+}
+.main__order-button:hover {
+  opacity: 0.9;
+}/*# sourceMappingURL=style.css.map */

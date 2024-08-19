@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 130px;
+
+  &__title {
+    color: white;
+
+    &-heading {
+      font-size: 30px;
+
+      &__highlight {
+        color: yellow;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    background: url('../images/button.png') no-repeat center center;
+    background-size: contain;
+    width: 400px;
+    height: 85px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-top: 15px;
+  }
+
+  &__button:hover {
+    opacity: 0.9;
+  }
+}
+
