@@ -273,6 +273,12 @@ button {
 .main__image-rocker {
   width: auto;
   height: 90vh;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1550px) {
+  .main__image-rocker {
+    height: 70vh;
+  }
 }
 @media screen and (max-width: 700px) {
   .main__image-rocker {

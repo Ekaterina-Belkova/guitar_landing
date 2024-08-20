@@ -14,10 +14,11 @@
     &-rocker {
       width: auto;
       height: 90vh;
+      margin-top: 30px;
 
-      // @media screen and (max-width: 1550px) {
-      //   height: 70vh;
-      // }
+      @media screen and (max-width: 1550px) {
+        height: 70vh;
+      }
 
       // @media screen and (max-width: 1250px) {
       //   height: 50vh;
